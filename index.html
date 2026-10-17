@@ -3,228 +3,499 @@
 
 <head>
     <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta
         name="description"
-        content="Madiha Sultana's personal portfolio.
-        Explore my journey in web development,
-        programming, and technology."
+        content="Explore my portfolio as a BCA student, aspiring web developer, and creative builder."
     >
 
-    <title>Madiha Sultana | Portfolio</title>
+    <meta name="theme-color" content="#02060E">
 
-    <!-- Connect our CSS file -->
+    <title>Madiha | Crimson Noir Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Main CSS -->
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
 
-    <!-- HEADER: Logo and navigation -->
+    <!-- ================= HEADER ================= -->
 
-    <header class="site-header">
+    <header>
+        <nav aria-label="Main navigation">
 
-        <a href="#home" class="logo">
-            Madiha<span>.</span>
-        </a>
+            <a href="#home" class="logo">MADIHA<span>.</span></a>
 
-        <nav class="navigation" aria-label="Main navigation">
-
-            <a href="#home">Home</a>
-
-            <a href="#about">About</a>
-
-            <a href="#skills">Skills</a>
-
-            <a href="#projects">Projects</a>
-
-            <a href="#contact">Contact</a>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
 
         </nav>
-
-        <a href="#contact" class="header-button">
-            Let's Talk
-        </a>
-
     </header>
 
 
-    <!-- MAIN: Website content -->
+    <!-- ================= MAIN CONTENT ================= -->
 
     <main>
 
-        <!-- HERO: The first screen visitors see -->
+        <!-- ================= HOME ================= -->
 
         <section class="hero" id="home">
 
-            <!-- Background layer -->
+            <!-- LEFT: INTRODUCTION -->
 
-            <div
-                class="hero-background"
-                aria-hidden="true"
-            ></div>
+            <div class="hero-content">
 
+                <span class="eyebrow">
+                    STUDENT · CREATOR · DEVELOPER
+                </span>
 
-            <!-- Character layer -->
+                <h1>
+                    Building my
+                    <span>digital</span>
+                    future.
+                </h1>
 
-            <div class="hero-character">
+                <p class="hero-description">
+                    Hey, I'm Madiha — a BCA student learning to turn
+                    ideas into meaningful digital experiences.
+                    This is where my journey of learning, creating,
+                    and growing comes to life.
+                </p>
 
-                <img
-                    src="assets/images/hero-character.png"
-                    alt="Illustrated character wearing a black hijab and niqab"
-                >
+                <h2 style="font-size: 1.35rem; margin-top: 22px;">
+                    I'm a <span id="typing-text">Web Developer</span>
+                </h2>
+
+                <div class="hero-buttons">
+
+                    <a href="#projects" class="button">
+                        Explore My Work ↗
+                    </a>
+
+                    <a href="#about" class="button button-outline">
+                        Discover My Story
+                    </a>
+
+                </div>
+
+                <div class="status-badge">
+                    <span class="status-dot"></span>
+                    Learning. Building. Evolving.
+                </div>
 
             </div>
 
 
-            <!-- Introduction layer -->
+            <!-- RIGHT: CHARACTER ILLUSTRATION -->
 
-            <div class="hero-content">
+            <div class="hero-image">
 
-                <p class="eyebrow">
-                    STUDENT · CREATOR · DEVELOPER
-                </p>
+                <div class="character-frame">
 
-                <h1>
-                    Hi, I'm
-                    <span>Madiha Sultana.</span>
-                </h1>
+                    <!--
+                    Place your character image at:
+                    assets/images/character.png
 
-                <p class="hero-subtitle">
-                    BCA Student |
-                    Web Developer |
-                    Future AI Engineer
-                </p>
+                    The image will appear here after you add the file.
+                    -->
 
-                <p class="hero-description">
-                    I'm learning to turn ideas into
-                    meaningful digital experiences.
+                    <img
+                        src="assets/images/character.png"
+                        alt="Illustration of a woman wearing a black hijab and niqab"
+                        onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
+                    >
 
-                    This is my journey of learning,
-                    creating, and growing through technology.
-                </p>
+                    <div
+                        class="character-placeholder"
+                        style="display: none;"
+                    >
+                        <p style="color: #FF174F; font-size: 1.4rem;">
+                            YOUR CHARACTER
+                        </p>
+
+                        <p>
+                            Add your illustration to
+                            assets/images/character.png
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
 
 
-                <!-- Call-to-action buttons -->
+        <!-- ================= ABOUT ================= -->
 
-                <div class="hero-buttons">
+        <section id="about">
 
-                    <a href="#projects" class="button-primary">
-                        Explore My Work
-                    </a>
+            <div class="about-layout">
 
-                    <a href="#contact" class="button-secondary">
-                        Let's Connect
+                <div>
+                    <span class="about-label">01 / ABOUT ME</span>
+
+                    <h2>
+                        The person behind
+                        <span>the screen.</span>
+                    </h2>
+                </div>
+
+                <div class="about-content">
+
+                    <p>
+                        I'm a first-year BCA student exploring the
+                        world of programming, web development, and
+                        technology. I'm building my foundation one
+                        concept and one project at a time.
+                    </p>
+
+                    <p>
+                        My goal is to become a skilled software
+                        professional, create useful digital products,
+                        and keep expanding my knowledge of AI and
+                        modern technology.
+                    </p>
+
+                    <p>
+                        This portfolio is more than a collection of
+                        projects. It documents my progress, my
+                        experiments, and the person I'm becoming.
+                    </p>
+
+                    <a href="#contact" class="button">
+                        Let's Connect ↗
                     </a>
 
                 </div>
 
             </div>
 
-            <!-- Scroll indicator -->
+        </section>
 
-            <a
-                href="#about"
-                class="scroll-indicator"
-                aria-label="Scroll to About Me"
-            >
-                <span>SCROLL TO EXPLORE</span>
-                <span aria-hidden="true">↓</span>
-            </a>
+
+        <!-- ================= SKILLS ================= -->
+
+        <section id="skills">
+
+            <div class="section-heading">
+
+                <span class="section-tag">02 / WHAT I'M LEARNING</span>
+
+                <h2>
+                    Skills in <span>progress.</span>
+                </h2>
+
+                <p>
+                    I'm developing my technical foundation through
+                    coursework, practice, and hands-on projects.
+                </p>
+
+            </div>
+
+
+            <div class="skills-grid">
+
+                <article class="skill-card">
+                    <span class="project-number">01</span>
+
+                    <h3>HTML & CSS</h3>
+
+                    <p>
+                        Creating structured webpages with responsive
+                        layouts, modern styling, and accessible design.
+                    </p>
+                </article>
+
+
+                <article class="skill-card">
+                    <span class="project-number">02</span>
+
+                    <h3>JavaScript</h3>
+
+                    <p>
+                        Learning programming fundamentals,
+                        interactivity, events, and DOM manipulation.
+                    </p>
+                </article>
+
+
+                <article class="skill-card">
+                    <span class="project-number">03</span>
+
+                    <h3>C Programming</h3>
+
+                    <p>
+                        Strengthening logical thinking through
+                        variables, conditions, loops, arrays, and functions.
+                    </p>
+                </article>
+
+
+                <article class="skill-card">
+                    <span class="project-number">04</span>
+
+                    <h3>Git & GitHub</h3>
+
+                    <p>
+                        Practising version control, project tracking,
+                        repositories, and collaboration workflows.
+                    </p>
+                </article>
+
+
+                <article class="skill-card">
+                    <span class="project-number">05</span>
+
+                    <h3>Responsive Design</h3>
+
+                    <p>
+                        Learning to build interfaces that adapt to
+                        phones, tablets, and desktop screens.
+                    </p>
+                </article>
+
+
+                <article class="skill-card">
+                    <span class="project-number">06</span>
+
+                    <h3>AI & Technology</h3>
+
+                    <p>
+                        Exploring AI tools and concepts that can help
+                        me learn, experiment, and build useful products.
+                    </p>
+                </article>
+
+            </div>
 
         </section>
 
 
-        <!-- ABOUT SECTION: Placeholder for our next lesson -->
+        <!-- ================= PROJECTS ================= -->
 
-        <section id="about" class="content-section">
+        <section id="projects">
 
-            <p class="eyebrow">A LITTLE ABOUT ME</p>
+            <div class="section-heading">
 
-            <h2>More than just a student.</h2>
+                <span class="section-tag">03 / SELECTED WORK</span>
 
-            <p>
-                I'm building my skills in web development
-                while exploring programming, technology,
-                and creative problem-solving.
-            </p>
+                <h2>
+                    Ideas becoming <span>reality.</span>
+                </h2>
+
+                <p>
+                    A growing collection of experiments and projects
+                    as I develop my skills.
+                </p>
+
+            </div>
+
+
+            <div class="projects-grid">
+
+                <article class="project-card">
+
+                    <span class="project-number">PROJECT 01</span>
+
+                    <h3>Personal Portfolio</h3>
+
+                    <p>
+                        A personal website showcasing my journey,
+                        interests, skills, and development projects.
+                    </p>
+
+                    <span class="project-link">
+                        HTML · CSS · JavaScript
+                    </span>
+
+                </article>
+
+
+                <article class="project-card">
+
+                    <span class="project-number">PROJECT 02</span>
+
+                    <h3>Weather Dashboard</h3>
+
+                    <p>
+                        A planned weather interface for displaying
+                        weather information through a suitable API.
+                    </p>
+
+                    <span class="project-link">
+                        JavaScript · API
+                    </span>
+
+                </article>
+
+
+                <article class="project-card">
+
+                    <span class="project-number">PROJECT 03</span>
+
+                    <h3>AI Chatbot</h3>
+
+                    <p>
+                        A future learning project exploring how
+                        conversational interfaces can assist users.
+                    </p>
+
+                    <span class="project-link">
+                        JavaScript · AI Concepts
+                    </span>
+
+                </article>
+
+            </div>
 
         </section>
 
 
-        <!-- SKILLS SECTION -->
+        <!-- ================= CONTACT ================= -->
 
-        <section id="skills" class="content-section">
+        <section id="contact">
 
-            <p class="eyebrow">WHAT I'M LEARNING</p>
+            <div class="contact-layout">
 
-            <h2>My Skills</h2>
+                <div>
 
-            <p>
-                My skills section will grow alongside
-                my learning journey.
-            </p>
+                    <span class="section-tag">04 / GET IN TOUCH</span>
 
-        </section>
+                    <h2>
+                        Let's create something
+                        <span>meaningful.</span>
+                    </h2>
 
+                    <p>
+                        Interested in technology, learning, or
+                        collaborating on a project? You can connect
+                        with me through the contact details I add here.
+                    </p>
 
-        <!-- PROJECTS SECTION -->
-
-        <section id="projects" class="content-section">
-
-            <p class="eyebrow">THINGS I'M BUILDING</p>
-
-            <h2>My Projects</h2>
-
-            <p>
-                Projects, experiments, and ideas
-                will appear here.
-            </p>
-
-        </section>
+                </div>
 
 
-        <!-- CONTACT SECTION -->
+                <div class="contact-details">
 
-        <section id="contact" class="content-section">
+                    <div class="contact-item">
 
-            <p class="eyebrow">LET'S CONNECT</p>
+                        <span>GitHub</span>
 
-            <h2>Have an idea? Let's talk.</h2>
+                        <a
+                            href="https://github.com/madihasultana1983-ops"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Explore my repositories ↗
+                        </a>
 
-            <a href="mailto:your-email@example.com">
-                Email Me
-            </a>
+                    </div>
+
+
+                    <div class="contact-item">
+
+                        <span>Instagram</span>
+
+                        <a
+                            href="https://www.instagram.com/madiha_inspire/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Follow my creative journey ↗
+                        </a>
+
+                    </div>
+
+
+                    <div class="contact-item">
+
+                        <span>Email</span>
+
+                        <p>
+                            Add your preferred contact email here.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
 
         </section>
 
     </main>
 
 
-    <!-- FOOTER -->
+    <!-- ================= FOOTER ================= -->
 
-    <footer class="site-footer">
+    <footer>
 
         <p>
-            Designed and built by Madiha Sultana.
+            Designed while learning, built with purpose.
         </p>
 
         <p>
-            Learning. Creating. Evolving.
+            © <span id="current-year">2026</span>
+            Madiha. All rights reserved.
         </p>
 
     </footer>
 
 
-    <!-- Connect our JavaScript file -->
+    <!-- BACK TO TOP -->
+
+    <button
+        id="back-to-top"
+        type="button"
+        aria-label="Back to top"
+        style="
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            z-index: 50;
+            display: none;
+            padding: 12px 16px;
+            border: 1px solid #C50337;
+            border-radius: 8px;
+            background: #C50337;
+            color: white;
+            cursor: pointer;
+        "
+    >
+        ↑ Top
+    </button>
+
+
+    <!-- MAIN JAVASCRIPT -->
 
     <script src="script.js"></script>
 
-</body>
+    <!-- Show the back-to-top button when scrolling -->
 
+    <script>
+        const topButton = document.getElementById("back-to-top");
+
+        window.addEventListener("scroll", () => {
+            topButton.style.display =
+                window.scrollY > 400 ? "block" : "none";
+        }, { passive: true });
+    </script>
+
+</body>
 </html>
