@@ -755,3 +755,131 @@ footer span {
         transition-duration: 0.01ms !important;
     }
 }
+
+/* ═══ CRIMSON NOIR MOTION PACK ═══ */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Cinematic entrance */
+.hero-content {
+  animation: cinematicEnter 1.2s ease-out both;
+}
+
+.hero-image {
+  animation: characterEnter 1.5s ease-out both;
+}
+
+/* Fade and slide in */
+.reveal {
+  opacity: 0;
+  transform: translateY(35px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s cubic-bezier(.2, .7, .2, 1);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Cards rise smoothly */
+.skill-card,
+.project-card,
+.contact-item {
+  transition:
+    transform 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .skill-card:hover,
+  .project-card:hover,
+  .contact-item:hover {
+    transform: translateY(-8px) scale(1.02);
+    border-color: #C50337;
+    box-shadow: 0 12px 35px #C5033730;
+  }
+}
+
+/* Animated crimson glow */
+.hero-image,
+.character-frame {
+  animation:
+    characterEnter 1.5s ease-out both,
+    crimsonPulse 4s ease-in-out 1.5s infinite alternate;
+}
+
+/* Button interaction */
+button,
+.btn,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.btn {
+  transition: transform 0.25s ease,
+              box-shadow 0.25s ease;
+}
+
+.btn:active {
+  transform: scale(0.96);
+}
+
+/* Cinematic keyframes */
+@keyframes cinematicEnter {
+  from {
+    opacity: 0;
+    transform: translateX(-35px);
+    filter: blur(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+    filter: blur(0);
+  }
+}
+
+@keyframes characterEnter {
+  from {
+    opacity: 0;
+    transform: translateY(25px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes crimsonPulse {
+  from {
+    filter: drop-shadow(0 0 3px #C5033720);
+  }
+  to {
+    filter: drop-shadow(0 0 12px #C5033760);
+  }
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}
