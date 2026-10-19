@@ -310,23 +310,32 @@ section p {
 }
 
 /* Decorative rings */
+/* Inner crimson orbital ring */
 .character-frame::before {
     content: "";
     position: absolute;
-    width: 75%;
+    z-index: 3;
+    width: 78%;
     aspect-ratio: 1;
-    border: 1px solid rgba(255, 23, 79, 0.35);
+    border: 1px solid rgba(255, 23, 79, 0.45);
     border-radius: 50%;
+    box-shadow: 0 0 12px rgba(197, 3, 55, 0.12);
+    pointer-events: none;
+
     animation: rotateRing 18s linear infinite;
 }
 
+/* Outer dashed orbital ring */
 .character-frame::after {
     content: "";
     position: absolute;
-    width: 90%;
+    z-index: 3;
+    width: 94%;
     aspect-ratio: 1;
-    border: 1px dashed rgba(255, 23, 79, 0.2);
+    border: 1px dashed rgba(255, 23, 79, 0.30);
     border-radius: 50%;
+    pointer-events: none;
+
     animation: rotateRing 28s linear infinite reverse;
 }
 
