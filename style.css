@@ -803,7 +803,7 @@ footer span {
     min-height: 0;
 
     overflow: hidden;
-    animation: crimsonPulse 4s ease-in-out 1.3s infinite alternate;
+    animation: crimsonAura 4s ease-in-out 1.3s infinite alternate;
 }
 
 /* Desktop typography */
@@ -914,5 +914,39 @@ footer span {
         opacity: 1;
         transform: none;
         transition: none;
+    }
+}
+/* =========================================
+   CRIMSON NOIR — CINEMATIC MOTION
+   ========================================= */
+
+/* Smooth crimson aura around the character */
+@keyframes crimsonAura {
+    0%, 100% {
+        box-shadow:
+            0 0 15px rgba(197, 3, 55, 0.20),
+            0 0 35px rgba(197, 3, 55, 0.08);
+    }
+
+    50% {
+        box-shadow:
+            0 0 25px rgba(197, 3, 55, 0.40),
+            0 0 65px rgba(197, 3, 55, 0.18);
+    }
+}
+
+/* Subtle movement for the character image */
+.character-frame img {
+    animation: characterDrift 6s ease-in-out infinite;
+    will-change: transform;
+}
+
+@keyframes characterDrift {
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.025);
     }
 }
